@@ -1,5 +1,10 @@
 name: Events Demo 1
-on: ...
+run-name: Demo of Activity Types
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [assigned]
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
